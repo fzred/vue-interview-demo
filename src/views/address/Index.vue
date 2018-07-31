@@ -1,13 +1,16 @@
 <template>
-  <v-container fluid grid-list-lg>
+  <v-container fluid
+               grid-list-lg>
     <v-layout>
 
-      <v-flex xs12 sm6>
-        Addr List
+      <v-flex xs12
+              sm6>
+        <AddrList />
       </v-flex>
 
-      <v-flex xs12 sm6>
-        Addr Form
+      <v-flex xs12
+              sm6>
+        <AddrForm />
       </v-flex>
 
     </v-layout>
@@ -15,12 +18,11 @@
 </template>
 
 <script>
+import AddrList from './AddrList'
+import AddrForm from './AddrForm'
+
 export default {
   name: 'Address',
-  mounted () {
-    this.$store.dispatch('address/index')
-  },
-  components: {
-  }
+  components: {AddrList, AddrForm}
 }
 </script>

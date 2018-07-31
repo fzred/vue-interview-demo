@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import AxiosProvider from './axiosProvider'
+import AxiosProvider from '../api/axiosProvider'
 import _ from 'lodash'
 
 import Address from './modules/address'
